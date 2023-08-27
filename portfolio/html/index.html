@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/slide.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/modal.js"></script>
+</head>
+<body>
+    <div id="page_content">
+        <header>
+            <div>
+                <h1><a href="#">KIM INSEONG</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#main">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="main" class="main_banner">
+            <h2 class="section_title">WEB PUBLISHER PORTFOLIO</h2>
+        </section>
+        <section id="about" class="guide_line">
+            <h2 class="section_title">ABOUT</h2>
+            <ul class="about_wrap">
+                <li class="about_list">이름 : <span>김인성</span></li>
+                <li class="about_list">생년월일 : <span>1996.05.04</span></li>
+                <li class="about_list">거주지 : <span>인천 서구 검단</span></li>
+                <li class="about_list">교육
+                    <p><span>2020.11 - 2021.02</span>이젠 아카데미컴퓨터 학원</p>
+                    <p><span>2021.09 - 2022.04</span>SBS 아카데미컴퓨터 학원</p>
+                </li>
+                <li class="about_list">경력
+                    <p><span>2022.07 - 2023.07</span>(주)라이피스</p>
+                    <small>(주)라이피스는 웹/앱/응용 SW 전문 개발사로, 웹팀의 일원으로써 다양한 프로젝트의 주된 퍼블리싱 업무를 맡았습니다.</small>
+                </li>
+            </ul>
+            <div class="use_title use_skill">
+                <p>My Skills</p>
+                <ul class="use_wrap">
+                    <li class="use_list"><img src="../images/html.png" alt="use_list_icon"></li>
+                    <li class="use_list"><img src="../images/css.png" alt="use_list_icon"></li>
+                    <li class="use_list"><img src="../images/jquery.png" alt="use_list_icon"></li>
+                    <li class="use_list"><img src="../images/javascript.png" alt="use_list_icon"></li>
+                </ul>
+            </div>
+            <div class="use_title use_tool">
+                <p>Used Tools</p>
+                <ul class="use_wrap">
+                    <li class="use_list"><img src="../images/vscode.png" alt="use_list_icon"></li>
+                    <li class="use_list"><img src="../images/photoshop.png" alt="use_list_icon"></li>
+                    <li class="use_list"><img src="../images/figma.png" alt="use_list_icon"></li>
+                    <li class="use_list"><img src="../images/github.png" alt="use_list_icon"></li>
+                </ul>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2 class="section_title">PORTFOLIO</h2>
+
+            <div class="tab_wrap">
+                <button type="button" class="tab_list active" data-tab="tab01">Reponsive WebSite</button>
+                <button type="button" class="tab_list" data-tab="tab02">Reponsive FullPage</button>
+            </div>
+
+            <ul class="works_wrap active" id="tab01">
+                <li class="works_list" onClick="window.open('http://shineamc.com/');">
+                    <div class="inner">
+                        <div class="works_img"><img src="../images/샤인메디컬.png" alt="works_images"></div>
+                        <div class="works_txt">
+                            <span>샤인메디컬센터</span>
+                            <span>작업기간 : 한달</span>
+                            <span>퍼블리싱 : 100%</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="works_list" onClick="window.open('http://shineamc.com/eye');">
+                    <div class="inner">
+                        <div class="works_img"><img src="../images/샤인메디컬.png" alt="works_images"></div>
+                        <div class="works_txt">
+                            <span>샤인아이안과</span>
+                            <span>작업기간 : 2주</span>
+                            <span>퍼블리싱 : 100%</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="works_list" onClick="window.open('http://shineamc.com/');">
+                    <div class="inner">
+                        <div class="works_img"><img src="../images/샤인메디컬.png" alt="works_images"></div>
+                        <div class="works_txt">
+                            <span>라디</span>
+                            <span>작업기간 : 한달</span>
+                            <span>퍼블리싱 : 100%</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="works_list" onClick="window.open('http://www.durix.co.kr/');">
+                    <div class="inner">
+                        <div class="works_img"><img src="../images/두릭스.png" alt="works_images"></div>
+                        <div class="works_txt">
+                            <span>두릭스</span>
+                            <span>작업기간 : 한달</span>
+                            <span>퍼블리싱 : 100%</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="works_list" onClick="window.open('http://century21enc.com/');">
+                    <div class="inner">
+                        <div class="works_img"><img src="../images/세기전기.png" alt="works_images"></div>
+                        <div class="works_txt">
+                            <span>세기전기</span>
+                            <span>작업기간 : 한달</span>
+                            <span>퍼블리싱 : 100%</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="works_list" onClick="window.open('http://www.mycolorlab.com/');">
+                    <div class="inner">
+                        <div class="works_img"><img src="../images/컬러랩.png" alt="works_images"></div>
+                        <div class="works_txt">
+                            <span>마이컬러랩</span>
+                            <span>작업기간 : 한달</span>
+                            <span>퍼블리싱 : 100%</span>
+                        </p>
+                    </div>
+                </li>
+                <li class="works_list" onClick="window.open('http://psse.kr/');">
+                    <div class="inner">
+                        <div class="works_img"><img src="../images/커넥티드 에듀.png" alt="works_images"></div>
+                        <div class="works_txt">
+                            <span>커넥티드 에듀</span>
+                            <span>작업기간 : 한달</span>
+                            <span>퍼블리싱 : 100%</span>
+                        </p>
+                    </div>
+                </li>
+                <!-- <li class="works_list">
+                    <div class="works_img"><img src="../images/두릭스.png" alt="works_images"></div>
+                    <p class="works_txt">
+                       sknjdlaksndlaskndl 
+                       sacascasxcxcxcqawcqwcqw
+                    </p>
+                </li>
+                <li class="works_list">
+                    <div class="works_img"><img src="../images/세기전기.png" alt="works_images"></div>
+                    <p class="works_txt">
+                       sknjdlaksndlaskndl 
+                       sacascasxcxcxcqawcqwcqw
+                    </p>
+                </li>
+                <li class="works_list">
+                    <div class="works_img"><img src="../images/컬러랩.png" alt="works_images"></div>
+                    <p class="works_txt">
+                       sknjdlaksndlaskndl 
+                       sacascasxcxcxcqawcqwcqw
+                    </p>
+                </li>
+                <li class="works_list">
+                    <div class="works_img"><img src="../images/커넥티드 에듀.png" alt="works_images"></div>
+                    <p class="works_txt">
+                       sknjdlaksndlaskndl 
+                       sacascasxcxcxcqawcqwcqw
+                    </p>
+                </li> -->
+            </ul>
+
+            <ul class="works_wrap" id="tab02">
+                <li class="works_list">
+                    <div class="works_img"><img src="../images/두릭스.png" alt="works_images"></div>
+                    <p class="works_txt">
+                       sknjdlaksndlaskndl 
+                       sacascasxcxcxcqawcqwcqw
+                    </p>
+                </li>
+                <li class="works_list">
+                    <div class="works_img"><img src="../images/샤인메디컬.png" alt="works_images"></div>
+                    <p class="works_txt">
+                       sknjdlaksndlaskndl 
+                       sacascasxcxcxcqawcqwcqw
+                    </p>
+                </li>
+                <li class="works_list">
+                    <div class="works_img"><img src="../images/컬러랩.png" alt="works_images"></div>
+                    <p class="works_txt">
+                       sknjdlaksndlaskndl 
+                       sacascasxcxcxcqawcqwcqw
+                    </p>
+                </li>
+                <li class="works_list">
+                    <div class="works_img"><img src="../images/세기전기.png" alt="works_images"></div>
+                    <p class="works_txt">
+                       sknjdlaksndlaskndl 
+                       sacascasxcxcxcqawcqwcqw
+                    </p>
+                </li>
+                <li class="works_list">
+                    <div class="works_img"><img src="../images/커넥티드 에듀.png" alt="works_images"></div>
+                    <p class="works_txt">
+                       sknjdlaksndlaskndl 
+                       sacascasxcxcxcqawcqwcqw
+                    </p>
+                </li>
+            </ul>
+
+        </section>
+        <section id="contact" class="guide_line">
+            <h2 class="section_title">CONTACT</h2>
+            <ul class="contact_wrap">
+                <li class="contact_list">
+                    Phone : 010. 6636. 7746
+                </li>
+                <li class="contact_list">
+                    E-mail : issseong9460163@gmail.com
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <p>Thanks for visiting my Website.<br>
+                Copyright ⓒ 2023. Inseong Kim All rights reserved.
+            </p>
+            <button>
+                TOP
+            </button>
+        </footer>
+    </div>
+</body>
+</html>

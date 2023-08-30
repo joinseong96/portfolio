@@ -133,9 +133,10 @@
 .works_img{
 }
 .works_txt{
+    padding: 0 100px;
+    gap: 15px;
     background: royalblue; 
 	transform: rotateY(180deg);
-    
 }
 .works_txt, .works_img{
     position: absolute;
@@ -144,7 +145,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     color: #fff;
     backface-visibility: hidden;
     background: #111;

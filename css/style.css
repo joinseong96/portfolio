@@ -130,7 +130,9 @@
 .works_list:hover .inner{
     transform: rotateY(180deg);
 }
-.works_img{
+.works_img img{
+    width: 100%;
+    height: 100%;
 }
 .works_txt{
     padding: 0 100px;

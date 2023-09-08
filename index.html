@@ -5,19 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <!-- <link rel="stylesheet" href="css/media.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/slide.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/modal.js"></script>
 </head>
 <body>
     <div id="page_content">
@@ -38,11 +35,11 @@
             <h2 class="section_title">WEB PUBLISHER PORTFOLIO</h2>
         </section>
         <section id="about" class="guide_line">
-            <h2 class="section_title">ABOUT</h2>
+            <h2 class="section_title" data-aos="fade-right" data-aos-duration="1200">ABOUT</h2>
             <ul class="about_wrap">
                 <li class="about_list">이름 : <span>김인성</span></li>
                 <li class="about_list">생년월일 : <span>1996.05.04</span></li>
-                <li class="about_list">거주지 : <span>인천 서구 검단</span></li>
+                <li class="about_list">거주지 : <span>인천광역시 서구</span></li>
                 <li class="about_list">교육
                     <p><span>2020.11 - 2021.02</span>이젠 아카데미컴퓨터 학원</p>
                     <p><span>2021.09 - 2022.04</span>SBS 아카데미컴퓨터 학원</p>
@@ -53,215 +50,192 @@
                 </li>
             </ul>
             <div class="use_title use_skill">
-                <p>My Skills</p>
+                <p data-aos="fade-right" data-aos-duration="1200">My Skills</p>
                 <ul class="use_wrap">
-                    <li class="use_list"><img src="images/html.png" alt="use_list_icon"></li>
-                    <li class="use_list"><img src="images/css.png" alt="use_list_icon"></li>
-                    <li class="use_list"><img src="images/jquery.png" alt="use_list_icon"></li>
-                    <li class="use_list"><img src="images/javascript.png" alt="use_list_icon"></li>
+                    <li class="use_list" data-aos="fade-up" data-aos-duration="1200"><img src="images/html.png" alt="use_list_icon"></li>
+                    <li class="use_list" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"><img src="images/css.png" alt="use_list_icon"></li>
+                    <li class="use_list" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300"><img src="images/jquery.png" alt="use_list_icon"></li>
+                    <li class="use_list" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400"><img src="images/javascript.png" alt="use_list_icon"></li>
                 </ul>
             </div>
             <div class="use_title use_tool">
-                <p>Used Tools</p>
+                <p data-aos="fade-right" data-aos-duration="1200">Used Tools</p>
                 <ul class="use_wrap">
-                    <li class="use_list"><img src="images/vscode.png" alt="use_list_icon"></li>
-                    <li class="use_list"><img src="images/photoshop.png" alt="use_list_icon"></li>
-                    <li class="use_list"><img src="images/figma.png" alt="use_list_icon"></li>
-                    <li class="use_list"><img src="images/github.png" alt="use_list_icon"></li>
+                    <li class="use_list" data-aos="fade-up" data-aos-duration="1200"><img src="images/vscode.png" alt="use_list_icon"></li>
+                    <li class="use_list" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200"><img src="images/photoshop.png" alt="use_list_icon"></li>
+                    <li class="use_list" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300"><img src="images/figma.png" alt="use_list_icon"></li>
+                    <li class="use_list" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400"><img src="images/github.png" alt="use_list_icon"></li>
                 </ul>
             </div>
         </section>
         <section id="portfolio">
-            <h2 class="section_title">PORTFOLIO</h2>
-
+            <h2 class="section_title" data-aos="fade-right" data-aos-duration="1200">PORTFOLIO</h2>
             <div class="tab_wrap">
                 <button type="button" class="tab_list active" data-tab="tab01">Reponsive WebSite</button>
                 <button type="button" class="tab_list" data-tab="tab02">Reponsive FullPage</button>
             </div>
-
             <ul class="works_wrap active" id="tab01">
-                <li class="works_list" onClick="window.open('http://shineamc.com/');">
+                <li class="works_list" onClick="window.open('http://shineamc.com/');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
-                        <div class="works_img"><img src="images/샤인메디컬.png" alt="works_images"></div>
+                        <div class="works_img"><img src="images/shine.png" alt="works_images"></div>
                         <div class="works_txt">
                             <span>샤인메디컬센터</span>
-                            <span>작업기간 : 한달</span>
+                            <span>제작 기간 : 약 5주</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
                         </div>
                     </div>
                 </li>
-                <li class="works_list" onClick="window.open('http://shineamc.com/eye');">
+                <li class="works_list" onClick="window.open('http://shineamc.com/eye');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
-                        <div class="works_img"><img src="images/샤인메디컬.png" alt="works_images"></div>
+                        <div class="works_img"><img src="images/shine.png" alt="works_images"></div>
                         <div class="works_txt">
                             <span>샤인아이안과</span>
-                            <span>작업기간 : 2주</span>
+                            <span>제작 기간 : 2주</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
                         </div>
                     </div>
                 </li>
-                <li class="works_list" onClick="window.open('http://shineamc.com/');">
+                <li class="works_list" onClick="window.open('http://shineamc.com/');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
-                        <div class="works_img"><img src="images/샤인메디컬.png" alt="works_images"></div>
+                        <div class="works_img"><img src="images/gallery.png" alt="works_images"></div>
                         <div class="works_txt">
-                            <span>라디</span>
-                            <span>작업기간 : 한달</span>
+                            <span>손경수 갤러리</span>
+                            <span>제작 기간 : 약 3주</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
                         </div>
                     </div>
                 </li>
-                <li class="works_list" onClick="window.open('http://www.durix.co.kr/');">
+                <li class="works_list" onClick="window.open('http://www.durix.co.kr/');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
-                        <div class="works_img"><img src="images/두릭스.png" alt="works_images"></div>
+                        <div class="works_img"><img src="images/durics.png" alt="works_images"></div>
                         <div class="works_txt">
                             <span>두릭스</span>
-                            <span>작업기간 : 한달</span>
+                            <span>제작 기간 : 약 4주</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
                         </div>
                     </div>
                 </li>
-                <li class="works_list" onClick="window.open('http://century21enc.com/');">
+                <li class="works_list" onClick="window.open('http://century21enc.com/');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
-                        <div class="works_img"><img src="images/세기전기.png" alt="works_images"></div>
+                        <div class="works_img"><img src="images/enc.png" alt="works_images"></div>
                         <div class="works_txt">
                             <span>세기전기</span>
-                            <span>작업기간 : 한달</span>
+                            <span>제작 기간 : 약 3주</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
                         </div>
                     </div>
                 </li>
-                <li class="works_list" onClick="window.open('http://www.mycolorlab.com/');">
+                <li class="works_list" onClick="window.open('http://www.mycolorlab.com/');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
-                        <div class="works_img"><img src="images/컬러랩.png" alt="works_images"></div>
+                        <div class="works_img"><img src="images/colorlab.png" alt="works_images"></div>
                         <div class="works_txt">
                             <span>마이컬러랩</span>
-                            <span>작업기간 : 한달</span>
+                            <span>제작 기간 : 약 3주</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
                         </div>
                     </div>
                 </li>
-                <li class="works_list" onClick="window.open('http://psse.kr/');">
+                <li class="works_list" onClick="window.open('http://psse.kr/');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
-                        <div class="works_img"><img src="images/커넥티드 에듀.png" alt="works_images"></div>
+                        <div class="works_img"><img src="images/conneted_edu.png" alt="works_images"></div>
                         <div class="works_txt">
                             <span>커넥티드 에듀</span>
-                            <span>작업기간 : 한달</span>
+                            <span>제작 기간 : 약 4주</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
                         </div>
                     </div>
                 </li>
-                <!-- <li class="works_list">
-                    <div class="works_img"><img src="images/두릭스.png" alt="works_images"></div>
-                    <p class="works_txt">
-                       sknjdlaksndlaskndl 
-                       sacascasxcxcxcqawcqwcqw
-                    </p>
-                </li>
-                <li class="works_list">
-                    <div class="works_img"><img src="images/세기전기.png" alt="works_images"></div>
-                    <p class="works_txt">
-                       sknjdlaksndlaskndl 
-                       sacascasxcxcxcqawcqwcqw
-                    </p>
-                </li>
-                <li class="works_list">
-                    <div class="works_img"><img src="images/컬러랩.png" alt="works_images"></div>
-                    <p class="works_txt">
-                       sknjdlaksndlaskndl 
-                       sacascasxcxcxcqawcqwcqw
-                    </p>
-                </li>
-                <li class="works_list">
-                    <div class="works_img"><img src="images/커넥티드 에듀.png" alt="works_images"></div>
-                    <p class="works_txt">
-                       sknjdlaksndlaskndl 
-                       sacascasxcxcxcqawcqwcqw
-                    </p>
-                </li> -->
             </ul>
             
             <ul class="works_wrap" id="tab02">
-                <li class="works_list" onClick="window.open('https://joinseong96.github.io/PSSE/');">
+                <li class="works_list" onClick="window.open('https://joinseong96.github.io/PSSE/');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
                         <div class="works_img"><img src="images/psse.png" alt="works_images"></div>
                         <div class="works_txt">
-                            <span>샤인메디컬센터</span>
-                            <span>작업기간 : 한달</span>
+                            <span>PSSE</span>
+                            <span>제작 기간 : 일주일</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
+                            <!-- <span>사용언어 : html, css, jquery, javascript</span> -->
                         </div>
                     </div>
                 </li>
-                <li class="works_list">
+                <li class="works_list" onClick="window.open('https://joinseong96.github.io/radi/');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
                         <div class="works_img"><img src="images/radi.png" alt="works_images"></div>
                         <div class="works_txt">
-                            <span>샤인메디컬센터</span>
-                            <span>작업기간 : 한달</span>
+                            <span>RADI</span>
+                            <span>제작 기간 : 약 2주</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
+                            <!-- <span>사용언어 : html, css, jquery, javascript</span> -->
                         </div>
                     </div>
                 </li>
-                <li class="works_list">
+                <li class="works_list" onClick="window.open('https://joinseong96.github.io/onew/');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
                         <div class="works_img"><img src="images/onew.png" alt="works_images"></div>
                         <div class="works_txt">
-                            <span>샤인메디컬센터</span>
-                            <span>작업기간 : 한달</span>
+                            <span>ONEW</span>
+                            <span>제작 기간 : 약 2주</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
+                            <!-- <span>사용언어 : html, css, jquery, javascript</span> -->
                         </div>
                     </div>
                 </li>
-                <li class="works_list">
+                <li class="works_list" onClick="window.open('https://joinseong96.github.io/TYMS/');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
                         <div class="works_img"><img src="images/tyms.png" alt="works_images"></div>
                         <div class="works_txt">
-                            <span>샤인메디컬센터</span>
-                            <span>작업기간 : 한달</span>
+                            <span>TYMS</span>
+                            <span>제작 기간 : 일주일</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
+                            <!-- <span>사용언어 : html, css, jquery, javascript</span> -->
                         </div>
                     </div>
                 </li>
-                <li class="works_list">
+                <li class="works_list" onClick="window.open('https://joinseong96.github.io/filption/');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
                         <div class="works_img"><img src="images/filption.png" alt="works_images"></div>
                         <div class="works_txt">
-                            <span>샤인메디컬센터</span>
-                            <span>작업기간 : 한달</span>
+                            <span>FILPTION</span>
+                            <span>제작 기간 : 일주일</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
+                            <!-- <span>사용언어 : html, css, jquery, javascript</span> -->
                         </div>
                     </div>
                 </li>
-                <li class="works_list">
+                <li class="works_list" onClick="window.open('https://joinseong96.github.io/nike/');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
                         <div class="works_img"><img src="images/nike.png" alt="works_images"></div>
                         <div class="works_txt">
-                            <span>샤인메디컬센터</span>
-                            <span>작업기간 : 한달</span>
+                            <span>NIKE</span>
+                            <span>제작 기간 : 약 2주</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
+                            <!-- <span>사용언어 : html, css, jquery, javascript</span> -->
                         </div>
                     </div>
                 </li>
-                <li class="works_list">
+                <li class="works_list" onClick="window.open('https://joinseong96.github.io/connected/');" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                     <div class="inner">
                         <div class="works_img"><img src="images/connected.png" alt="works_images"></div>
                         <div class="works_txt">
-                            <span>샤인메디컬센터</span>
-                            <span>작업기간 : 한달</span>
+                            <span>CONNECTED</span>
+                            <span>제작 기간 : 약 4주</span>
                             <span>퍼블리싱 : 100%</span>
-                            <span>사용언어 : html, css, jquery, javascript</span>
+                            <span>가용기기 : PC, 태블릿, 휴대폰</span>
+                            <!-- <span>사용언어 : html, css, jquery, javascript</span> -->
                         </div>
                     </div>
                 </li>
@@ -269,7 +243,7 @@
 
         </section>
         <section id="contact" class="guide_line">
-            <h2 class="section_title">CONTACT</h2>
+            <h2 class="section_title" data-aos="fade-right" data-aos-duration="1200">CONTACT</h2>
             <ul class="contact_wrap">
                 <li class="contact_list">
                     Phone : 010. 6636. 7746
@@ -283,10 +257,13 @@
             <p>Thanks for visiting my Website.<br>
                 Copyright ⓒ 2023. Inseong Kim All rights reserved.
             </p>
-            <button>
-                TOP
-            </button>
         </footer>
     </div>
+    <div class="top_btn" onclick="window.scroll(0,0);">
+        <img src="images/arrow.png" alt="top_icon"/>
+    </div>
 </body>
+<script>
+    AOS.init();
+</script>
 </html>

@@ -2,7 +2,6 @@
     width: 100%;
     height: 1000px;
     margin-bottom: 100px;
-    /* background: url('../images/main_banner_bg.jpg') center / contain repeat; */
     background: url('../images/2102.i518.009_sky_cloud_evening_illustration.jpg') center / cover no-repeat;
     background-attachment: fixed;
 }
@@ -31,13 +30,21 @@
     margin-bottom: 50px;
     background: #f1eeee;
 }
+.use_skill{
+    margin-bottom: 50px;
+}
 
 .about_list{
     padding-left: 60px;
     font-size: 18px;
     background: url('../images/8206396.png') top 4px left 30px / 20px no-repeat;
 }
-
+.about_list p{
+    margin-top: 10px;
+}
+.about_list small{
+    margin-top: 5px;
+}
 .use_title > p{
     font-size: 30px;
     font-weight: 600;
@@ -115,24 +122,13 @@
     transition: .7s;
     transform-style: preserve-3d;
 }
-/* .works_list::after{
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.7);
-} */
-/* .works_list:hover::after{
-    background: transparent;
-} */
 .works_list:hover .inner{
     transform: rotateY(180deg);
 }
 .works_img img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .works_txt{
     padding: 0 100px;
@@ -152,11 +148,12 @@
     background: #111;
 }
 .works_txt span{
-
+    font-weight: 500;
+    font-size: 16px;
 }
-.works_list.active .works_txt{
-
-
+.works_txt span:first-of-type{
+    font-weight: 600;
+    font-size: 20px;
 }
 /* !portfolio area fin */
 .contact_wrap{

@@ -28,7 +28,6 @@ $(window).on('scroll', function () {
         posActive('contact');
     }
   });
- 
   function posActive(anchor) {
     $('nav .active').removeClass('active');
     $("nav").find('[href="#' + anchor + '"]').addClass('active');

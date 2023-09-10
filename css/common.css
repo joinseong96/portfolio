@@ -21,20 +21,24 @@ header div{
     display: flex;
     justify-content: space-between;
 }
-
+header h1{
+    width: 135px;
+}
 header a{
     padding: 30px 0;
     font-size: 20px;
     font-weight: 700;
 }
+header nav{
+    width: calc(100% - 135px);
+}
 
-header ul{
+header .gnb{
     display: flex;
+    justify-content: flex-end;
     gap: 30px;
 }
-header li a{
-    
-}
+
 header li a.active{
     position: relative;
 }
@@ -93,13 +97,18 @@ footer button{
     header div{
         width: calc(100vw*(1200/1580));
     }
-    
+    header h1{
+        width: calc(100vw*(135/1580));
+    }
     header a{
         padding: calc(100vw*(30/1580)) 0;
         font-size: calc(100vw*(20/1580));
     }
+    header nav{
+        width: calc(100% - calc(100vw*(135/1580)));
+    }
     
-    header ul{
+    header .gnb{
         gap: calc(100vw*(30/1580));
     }
     header.scroll li a.active::before{
@@ -128,15 +137,21 @@ footer button{
 }
 @media screen and (max-width: 769px){
     header div{
-        width: calc(100vw*(1200/370));
+        width: calc(100vw*(300/370));
     }
     
+    header h1{
+        width: calc(100vw*(135/370));
+    }
     header a{
         padding: calc(100vw*(30/370)) 0;
-        font-size: calc(100vw*(20/370));
+        font-size: calc(100vw*(14/370));
     }
-    
-    header ul{
+    header nav{
+        width: calc(100% - calc(100vw*(135/370)));
+    }
+
+    header .gnb{
         gap: calc(100vw*(30/370));
     }
     header.scroll li a.active::before{

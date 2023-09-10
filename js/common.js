@@ -33,3 +33,41 @@ $(window).on('scroll', function () {
     $("nav").find('[href="#' + anchor + '"]').addClass('active');
   }
 // ? header scroll fixed
+
+function scrollDisable() {
+  $("html, body").addClass("hidden");
+}
+
+// 스크롤 풀기
+function scrollAble() {
+  $("html, body").removeClass("hidden");
+}
+
+// 햄버거 버튼 클릭 시 메뉴 토글
+$(function(){
+  $('.menu_btn').click(function(){
+    $(this).toggleClass('active');
+    $(this).siblings('.nav_filter').toggleClass('active');
+    $(this).siblings('.nav_filter').children('nav').toggleClass('active');
+
+    if ($(".menu_btn").hasClass("active")) {
+      scrollDisable();
+    } else {
+      scrollAble();
+    }
+  });
+
+  $('.nav_bg').click(function(){
+    $('.nav_filter').removeClass('active')
+    $('nav').removeClass('active')
+    $('.menu_btn').removeClass('active');
+    scrollAble();
+  });
+
+  $(window).on("resize", function () {
+    ww = $(window).width();
+    if (ww < 769 || ww >= 769) {
+      location.reload();
+    }
+  });
+})

@@ -96,7 +96,10 @@
         font-size: calc(100vw*(24/1580));
     }
 }
-@media screen and (max-width: 769px){    
+@media screen and (max-width: 769px){
+    .mb_br{
+        display: block;
+    }
     .main_banner{
         height: calc(100vw*(500/370));
         margin-bottom: calc(100vw*(50/370));
@@ -149,7 +152,7 @@
         margin-bottom: calc(100vw*(100/370));
     }
     .tab_wrap{
-        width: calc(100vw*(462/370));
+        width: calc(100vw*(300/370));
         border-radius: calc(100vw*(30/370));
         margin: 0 auto calc(100vw*(100/370));
         
@@ -165,14 +168,14 @@
         border-radius: 0 calc(100vw*(30/370)) calc(100vw*(30/370)) 0;
     }
     .works_wrap{
-        width: calc(100vw*(1100/370));
+        width: calc(100vw*(300/370));
     }
     .works_wrap.active{
         gap: calc(100vw*(50/370)) 0;
     }
     .works_list{
-        width: calc(100vw*(500/370));
-        height: calc(100vw*(317/370));
+        width: 100%;
+        height: calc(100vw*(217/370));
     }
     .works_txt{
         padding: 0 calc(100vw*(100/370));
@@ -187,10 +190,11 @@
     /* !portfolio area fin */
 
     .contact_wrap{
-        width: calc(100vw*(1100/370));
+        width: 100%;
+        flex-direction: column;
         gap: calc(100vw*(50/370));
     }
     .contact_list{
-        font-size: calc(100vw*(24/370));
+        font-size: calc(100vw*(16/370));
     }
 }

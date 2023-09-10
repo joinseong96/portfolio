@@ -1,6 +1,10 @@
 html, body{
     font-family: 'Noto Sans KR', sans-serif;
 }
+html.hidden, body.hidden{
+    overflow: hidden;
+}
+
 header{
     position: fixed;
     left: 0;
@@ -15,7 +19,7 @@ header.scroll{
     background: #44187f;
 }
 
-header div{
+header .inner{
     width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -37,6 +41,9 @@ header .gnb{
     display: flex;
     justify-content: flex-end;
     gap: 30px;
+}
+header .mb_gnb{
+    display: none;
 }
 
 header li a.active{
@@ -94,7 +101,7 @@ footer button{
 }
 
 @media screen and (max-width: 1580px){
-    header div{
+    header .inner{
         width: calc(100vw*(1200/1580));
     }
     header h1{
@@ -136,7 +143,7 @@ footer button{
       }
 }
 @media screen and (max-width: 769px){
-    header div{
+    header .inner{
         width: calc(100vw*(300/370));
     }
     
@@ -147,16 +154,89 @@ footer button{
         padding: calc(100vw*(30/370)) 0;
         font-size: calc(100vw*(14/370));
     }
+    header .menu{
+        display: flex;
+        align-items: center;
+    }
+    header .menu_btn{
+        position: relative;
+        width: calc(100vw*(20/370));
+        height: calc(100vw*(15/370));
+        cursor: pointer;
+    }
+    header .menu_btn span{
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 2px;
+        border-radius: 15px;
+        background: #fff;
+        transition: all 0.35s;
+        z-index: 100;
+    }
+    header .menu_btn span:first-of-type{
+        top: 0;
+    }
+    header .menu_btn span:nth-of-type(2){
+        top: 8px;
+        transform: rotateY(-50%);
+    }
+    header .menu_btn span:last-of-type{
+        bottom: 0;
+    }
+    header .menu_btn.active span:first-of-type{
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+    }
+    header .menu_btn.active span:nth-of-type(2){
+        opacity: 0;
+    }
+    header .menu_btn.active span:last-of-type{
+        bottom: 50%;
+        transform: translateY(50%) rotate(45deg);
+    }
     header nav{
-        width: calc(100% - calc(100vw*(135/370)));
+        width: calc(100vw*(210/370));
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        top: 0;
+        right: calc(100vw*(-210/370));
+        z-index: 30;
+        transition: all 0.35s;
+    }
+    header nav.active{
+        right: 0;
+    }
+    header .nav_filter.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: auto;
+    }
+    .nav_bg{
+        width: calc(100% - 100vw*(210/370));
+        height: 100%;
     }
 
     header .gnb{
-        gap: calc(100vw*(30/370));
+        display: none;
+    }
+    header .mb_gnb{
+        display: block;
+        padding: calc(100vw*(30/370));
     }
     header.scroll li a.active::before{
-        border-top: calc(100vw*(5/370)) solid #fff;
-        top: calc(100vw*(20/370));
+        border-top: calc(100vw*(3/370)) solid #fff;
+        top: auto;
+        bottom: calc(100vw*(20/370));
     }
     /* !header area fin */
     
@@ -170,7 +250,7 @@ footer button{
         margin: 0 auto calc(100vw*(100/370));
     }
     .section_title{
-        width: calc(100vw*(1200/370));
+        width: calc(100vw*(300/370));
         margin: 0 auto calc(100vw*(50/370));
         font-size: calc(100vw*(30/370));
     }

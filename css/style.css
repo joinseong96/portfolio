@@ -6,7 +6,7 @@
     width: 100%;
     height: 1000px;
     margin-bottom: 100px;
-    background: url('../images/2102.i518.009_sky_cloud_evening_illustration.jpg') center / cover no-repeat;
+    background: url('../images/main_banner_bg.jpg') center / cover no-repeat;
     background-attachment: fixed;
 }
 
@@ -41,7 +41,7 @@
 .about_list{
     padding-left: 60px;
     font-size: 18px;
-    background: url('../images/8206396.png') top 4px left 30px / 20px no-repeat;
+    background: url('../images/check_icon.png') top 4px left 30px / 20px no-repeat;
 }
 .about_list p{
     margin-top: 10px;

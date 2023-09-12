@@ -96,9 +96,9 @@ footer button{
     cursor: pointer;
     z-index: 1;
   }
-.top_btn img{
+/* .top_btn img{
     border-radius: 50%;
-}
+} */
 
 @media screen and (max-width: 1580px){
     header .inner{

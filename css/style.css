@@ -21,11 +21,11 @@
     font-weight: 700;
 }
 /* ! main_banner area fin */
-#about{
+#about,
+#portfolio{
     margin: -100px auto 100px;
     padding-top: 100px;
 }
-
 .about_wrap{
     display: flex;
     flex-direction: column;
@@ -71,10 +71,6 @@
     transform: scale(1.2);
 }
 /* !about area fin */
-
-#portfolio{
-    margin-bottom: 100px;
-}
 
 .tab_wrap{
     width: 459px;
@@ -152,11 +148,11 @@
     background: #111;
 }
 .works_txt span{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
 }
 .works_txt span:first-of-type{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
 }
 /* !portfolio area fin */

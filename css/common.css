@@ -219,7 +219,7 @@ footer button{
     }
     header .mb_gnb{
         display: block;
-        padding: calc(100vw*(30/370));
+        padding: calc(100vw*(50/370)) calc(100vw*(30/370)) 0;
     }
     header.scroll li a.active::before{
         border-top: calc(100vw*(3/370)) solid #fff;

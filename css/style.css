@@ -9,6 +9,9 @@
     background: url('../images/main_banner_bg.jpg') center / cover no-repeat;
     background-attachment: fixed;
 }
+.main_banner .section_title{
+    margin: 0;
+}
 
 .main_banner h2{
     text-align: center;
@@ -43,8 +46,12 @@
     font-size: 18px;
     background: url('../images/check_icon.png') top 4px left 30px / 20px no-repeat;
 }
+.about_list span{
+    font-weight: 500;
+}
 .about_list p{
     margin-top: 10px;
+    font-weight: 400;
 }
 .about_list small{
     margin-top: 5px;
@@ -156,6 +163,10 @@
     font-size: 20px;
 }
 /* !portfolio area fin */
+
+#contact{
+    padding-top: 100px;
+}
 .contact_wrap{
     width: 1100px;
     margin: 0 auto;

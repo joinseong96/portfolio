@@ -87,6 +87,9 @@
     }
     /* !portfolio area fin */
 
+    #contact{
+        padding-top: calc(100vw*(100/1580));
+    }
     .contact_wrap{
         width: calc(100vw*(1100/1580));
         gap: calc(100vw*(50/1580));
@@ -187,6 +190,9 @@
     }
     /* !portfolio area fin */
 
+    #contact{
+        padding-top: calc(100vw*(50/370));
+    }
     .contact_wrap{
         width: 100%;
         flex-direction: column;

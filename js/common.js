@@ -64,10 +64,10 @@ $(function(){
     scrollAble();
   });
 
-  $(window).on("resize", function () {
-    ww = $(window).width();
-    if (ww < 789 || ww >= 789) {
-      location.reload();
-    }
-  });
+  // $(window).on("resize", function () {
+  //   ww = $(window).width();
+  //   if (ww < 769 || ww >= 769) {
+  //     location.reload();
+  //   }
+  // });
 })

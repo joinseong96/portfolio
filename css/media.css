@@ -2,6 +2,7 @@
     .main_banner{
         height: calc(100vw*(1000/1580));
         margin-bottom: calc(100vw*(100/1580));
+        background-attachment: unset;
     }
     
     .main_banner h2{

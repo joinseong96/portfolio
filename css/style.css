@@ -6,7 +6,9 @@
     width: 100%;
     height: 1000px;
     margin-bottom: 100px;
-    background: url('../images/main_banner_bg.jpg') center / cover no-repeat;
+    /* background: url('../images/main_banner_bg.jpg') center / cover no-repeat;
+    background-attachment: fixed; */
+    background: #000;
 }
 .main_banner .section_title{
     margin: 0;

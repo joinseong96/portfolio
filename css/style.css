@@ -1,3 +1,11 @@
+@media (hover: hover) {
+    .use_list:hover{
+        transform: scale(1.2);
+    }
+    .works_list:hover .inner{
+        transform: rotateY(180deg);
+    }
+}
 .mb_br{
     display: none;
 }
@@ -73,17 +81,13 @@
     transition: .3s;
     overflow: hidden;
 }
-
-.use_list:hover{
-    transform: scale(1.2);
-}
 /* !about area fin */
 
 .tab_wrap{
-    width: 459px;
     border-radius: 30px;
-    margin: 0 auto 100px;
+    margin: 0 0 100px 0;
     display: flex;
+    justify-content: center;
 }
 .tab_list{
     color: #000;
@@ -128,9 +132,6 @@
     position: relative;
     transition: .7s;
     transform-style: preserve-3d;
-}
-.works_list:hover .inner{
-    transform: rotateY(180deg);
 }
 .works_img img{
     width: 100%;

@@ -66,7 +66,7 @@ $(function(){
 
   $(window).on("resize", function () {
     ww = $(window).width();
-    if (ww < 779 || ww >= 779) {
+    if (ww < 789 || ww >= 789) {
       location.reload();
     }
   });
